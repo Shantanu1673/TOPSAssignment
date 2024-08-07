@@ -2,8 +2,7 @@ import java.util.Scanner;
 
 public class GratestNumber 
 {
-	public class GratestNumberFromAll 
-	{
+
 		public static void main(String[] args) 
 		{
 			
@@ -42,4 +41,3 @@ public class GratestNumber
 			
 		}
 	}
-}
