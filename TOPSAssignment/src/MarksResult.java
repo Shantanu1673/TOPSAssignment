@@ -1,3 +1,4 @@
+package Oops;
 import java.util.Scanner;
 
 
@@ -40,6 +41,6 @@ public class MarksResult
 			{
 		            System.out.println("Invalid marks entered Please enter marks between 0 and 100");
 		    }
-		    
+		    s1.close();
 	}
 }

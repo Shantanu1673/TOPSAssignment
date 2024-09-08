@@ -1,3 +1,4 @@
+package Array;
 import java.util.Scanner;
 
 public class MaxNumberFromArray 
@@ -8,31 +9,34 @@ public class MaxNumberFromArray
 
 		        System.out.println("Enter the number of elements in the array:");
 		        int n = s1.nextInt();
-		        int[] array = new int[n];
+		        int[] a = new int[n];
 
 		        System.out.println("Enter the elements of the array:");
 		        for (int i = 0; i < n; i++) 
 		        {
-		            array[i] = s1.nextInt();
+		            a[i] = s1.nextInt();
+		              
 		        }
-
-		        int maxNumber = findMax(array);
-		        System.out.println("The maximum number in the array is: " + maxNumber);
-		    }
-
-		    public static int findMax(int[] array) 
-		    {
-		        int max = array[0];
-		        for (int i = 1; i < array.length; i++)
+		        System.out.print("[ ");
+		        for (int i = 0; i < n; i++) 
 		        {
-		            if (array[i] > max) 
-		            {
-		                max = array[i];
-		            }
+		        	System.out.print(a[i]+" ");    
 		        }
-		        return max;
-		    }
+		        System.out.println("]");
+		        System.out.println();
+		        int max=a[0];
+		        for(int i=0;i<a.length;i++)
+		        {
+		        	if(a[i]>max)
+		        	{
+		        		max=a[i];
+		        	}
+		        	
+		        }
+		        System.out.println("max number is "+max);
+		        s1.close();
+	}
 }
 
-	
+  
 
